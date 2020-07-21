@@ -4,14 +4,36 @@ import Vuex from "vuex"
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state:{
-    user:{
-      username: window.localStorage.getItem('user' || '[]') == null ? '' : JSON.parse(window.localStorage.getItem('user' || '[]')).username
+  //定义全局参数
+  state: {
+    token: localStorage.getItem("token"),
+    userInfo: JSON.parse(sessionStorage.getItem("userInfo"))
+  },
+  mutations: {
+    //初始化并存储token以及userInfo
+    SET_TOKEN: (state, token) => {
+      state.token = token
+      localStorage.setItem("token",token)
+    },
+    SET_USERINFO: (state,userInfo) => {
+      state.userInfo = userInfo
+      sessionStorage.setItem("userInfo",JSON.stringify(userInfo))
+    },
+    //删除token及userInfo
+    REMOVE_INFO:(state)=>{
+      state.token = '';
+      state.userInfo = {};
+      localStorage.setItem("token",'')
+      sessionStorage.setItem("userInfo",JSON.stringify(''))
     }
-  },mutations:{
-    login(state,user){
-      state.user = user;
-      window.localStorage.setItem('user', JSON.stringify(user))
+  },
+  //get: 获取用户信息及token
+  getters: {
+    getUserInfo:state => {
+      return state.userInfo
+    },
+    getToken:state => {
+      return state.token
     }
-  }
+  },
 })
