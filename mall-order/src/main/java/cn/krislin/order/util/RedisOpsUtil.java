@@ -6,11 +6,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/26
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * redis操作类
  **/
 public class RedisOpsUtil {
 

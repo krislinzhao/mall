@@ -9,11 +9,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * MyBatis配置类
- * Created by macro on 2019/4/8.
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan({"com.tuling.tulingmall.mapper","com.tuling.tulingmall.portal.dao","com.tuling.tulingmall.dao"})
+@MapperScan({"cn.krislin.mall.mapper","cn.krislin.portal.dao","cn.krislin.mall.dao"})
 public class MyBatisConfig {
 
 

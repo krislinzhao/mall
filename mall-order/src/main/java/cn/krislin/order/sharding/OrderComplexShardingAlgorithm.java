@@ -9,20 +9,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/4/27 9:47
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 复合分片算法配合复合策略使用，支持范围与精确查询
+ * 复合分片算法配合复合策略使用，支持范围与精确查询
  **/
 public class OrderComplexShardingAlgorithm implements ComplexKeysShardingAlgorithm {
 

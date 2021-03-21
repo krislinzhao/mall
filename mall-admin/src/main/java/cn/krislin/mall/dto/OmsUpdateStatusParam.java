@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 
 /**
  * 确认收货提交参数
- * Created on 2018/10/18.
  */
 @Getter
 @Setter

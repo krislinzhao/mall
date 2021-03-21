@@ -3,7 +3,6 @@ package cn.krislin.mall.dto;
 
 /**
  * 商品分类对应属性信息
- * Created on 2018/5/23.
  */
 public class ProductAttrInfo {
     private Long attributeId;

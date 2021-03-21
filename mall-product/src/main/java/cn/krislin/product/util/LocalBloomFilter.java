@@ -6,12 +6,7 @@ import com.google.common.hash.Funnels;
 import java.nio.charset.StandardCharsets;
 
 /**
- *
- * @author ：杨过
- * @date ：Created in 2020/2/18
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 布隆过滤器-数字指纹存储在当前jvm当中
+ * 布隆过滤器-数字指纹存储在当前jvm当中
  **/
 public class LocalBloomFilter {
 

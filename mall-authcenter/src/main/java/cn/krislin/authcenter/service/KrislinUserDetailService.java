@@ -20,7 +20,7 @@ import java.util.List;
 */
 @Slf4j
 @Component
-public class TulingUserDetailService implements UserDetailsService {
+public class KrislinUserDetailService implements UserDetailsService {
 
     @Autowired
     private UmsMemberMapper memberMapper;

@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * 前台订单自定义Dao
- * Created by macro on 2018/9/4.
  */
 public interface PortalOrderDao {
     /**
@@ -38,8 +37,7 @@ public interface PortalOrderDao {
     int releaseSkuStockLock(@Param("itemList") List<OmsOrderItem> orderItemList);
 
     /**
-     * 删除订单[逻辑删除],只能status为：3->已完成；4->已关闭；5->无效订单，才可以删除
-     * ，否则只能先取消订单然后删除。
+     * 删除订单[逻辑删除],只能status为：3->已完成；4->已关闭；5->无效订单，才可以删除，否则只能先取消订单然后删除。
      * @param orderId
      * @return
      *      受影响的行

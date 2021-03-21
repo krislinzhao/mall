@@ -15,11 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/18
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 拦截器，所有需要查看商品详情的请求必须先过布隆过滤器
+ * 拦截器，所有需要查看商品详情的请求必须先过布隆过滤器
  **/
 @Slf4j
 public class BloomFilterInterceptor implements HandlerInterceptor {
@@ -45,7 +41,7 @@ public class BloomFilterInterceptor implements HandlerInterceptor {
             return true;
         }*/
 
-        /*
+        /**
          * 不在本地布隆过滤器当中，直接返回验证失败
          * 设置响应头
          */

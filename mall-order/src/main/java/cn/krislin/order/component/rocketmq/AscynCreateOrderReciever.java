@@ -15,24 +15,11 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/2/27 13:19
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 消费监听rocketmq-订单超时消息
+ * 消费监听rocketmq-订单超时消息
  **/
 @Slf4j
 @Component
-@RocketMQMessageListener(topic = "${rocketmq.tulingmall.asyncOrderTopic}",consumerGroup = "${rocketmq.tulingmall.asyncOrderGroup}")
+@RocketMQMessageListener(topic = "${rocketmq.mall.asyncOrderTopic}",consumerGroup = "${rocketmq.mall.asyncOrderGroup}")
 public class AscynCreateOrderReciever implements RocketMQListener<OrderMessage> {
 
     @Autowired

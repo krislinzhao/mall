@@ -2,7 +2,6 @@ package cn.krislin.mall.dto;
 
 /**
  * 查询单个产品进行修改时返回的结果
- * Created on 2018/4/26.
  */
 public class PmsProductResult extends PmsProductParam {
     //商品所选分类的父id

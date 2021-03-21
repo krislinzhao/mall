@@ -11,11 +11,10 @@ import org.springframework.util.StringUtils;
 
 /**
  * 消费监听rocketmq-订单超时消息
- * @author yangguo
  */
 @Slf4j
 @Component
-@RocketMQMessageListener(consumerGroup = "${rocketmq.tulingmall.cancelGroup}", topic = "${rocketmq.tulingmall.scheduleTopic}")
+@RocketMQMessageListener(consumerGroup = "${rocketmq.mall.cancelGroup}", topic = "${rocketmq.mall.scheduleTopic}")
 public class RocketMqCancelOrderReciever implements RocketMQListener<String> {
 
     @Autowired

@@ -1,6 +1,6 @@
 package cn.krislin.authcenter.config;
 
-import cn.krislin.authcenter.service.TulingUserDetailService;
+import cn.krislin.authcenter.service.KrislinUserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,28 +20,21 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private TulingUserDetailService tulingUserDetailService;
+    private KrislinUserDetailService krislinUserDetailService;
 
 
 
     /**
      * 方法实现说明:用于构建用户认证组件,需要传递userDetailsService和密码加密器
-     * @author:smlz
-     * @param auth
-     * @return:
-     * @exception:
-     * @date:2019/12/25 14:31
      */
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(tulingUserDetailService).passwordEncoder(passwordEncoder());
+        auth.userDetailsService(krislinUserDetailService).passwordEncoder(passwordEncoder());
     }
 
 
     /**
      * 设置前台静态资源不拦截
-     * @param web
-     * @throws Exception
      */
     @Override
     public void configure(WebSecurity web) throws Exception {

@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 限时购活动管理Service
- * Created on 2018/11/16.
  */
 public interface SmsFlashPromotionService {
     /**

@@ -43,7 +43,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 订单管理Controller
- * 2018/8/30.
  */
 @Slf4j
 @Controller
@@ -130,7 +129,7 @@ public class OmsPortalOrderController {
         return CommonResult.success(status);
     }
 
-    @ApiOperation("查看订单详情#杨过添加")
+    @ApiOperation("查看订单详情")
     @RequestMapping(value = "/orderDetail",method = {RequestMethod.POST,RequestMethod.GET})
     @ResponseBody
     public CommonResult orderDetail(@RequestParam Long orderId){
@@ -214,7 +213,7 @@ public class OmsPortalOrderController {
      * @param orderId
      * @return
      */
-    @ApiOperation(value = "删除会员订单#杨过添加",notes = "status为：3->已完成；4->已关闭；5->无效订单，才可以删除，否则只能先取消订单然后删除")
+    @ApiOperation(value = "删除会员订单",notes = "status为：3->已完成；4->已关闭；5->无效订单，才可以删除，否则只能先取消订单然后删除")
     @RequestMapping(value = "/deleteOrder",method = RequestMethod.POST)
     @ResponseBody
     public CommonResult deleteOrder(Long orderId){
@@ -233,7 +232,7 @@ public class OmsPortalOrderController {
      *      订单状态0->待付款；1->待发货；2->已发货；3->已完成;4->已关闭；
      * @return
      */
-    @ApiOperation("会员订单查询#杨过添加")
+    @ApiOperation("会员订单查询")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "memberId", value = "会员ID", required = true, paramType = "query", dataType = "integer"),
             @ApiImplicitParam(name = "status", value = "订单状态:0->待付款；1->待发货；2->已发货；3->已完成；4->已关闭",

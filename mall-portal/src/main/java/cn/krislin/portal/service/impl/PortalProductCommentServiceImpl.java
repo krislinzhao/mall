@@ -17,13 +17,6 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author ：杨过
- * @date ：Created in 2020/2/9
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
- **/
 @Service
 public class PortalProductCommentServiceImpl implements PortalProductCommentService {
     @Autowired

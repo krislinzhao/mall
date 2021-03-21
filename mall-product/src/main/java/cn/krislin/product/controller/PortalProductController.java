@@ -17,14 +17,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @author ：杨过
- * @date ：Created in 2019/12/31
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 商品详情信息管理
+ * 商品详情信息管理
  **/
 @RestController
-@Api(tags = "PortalProductController", description = "商品查询查看#杨过添加")
+@Api(tags = "PortalProductController", description = "商品查询查看")
 @RequestMapping("/pms")
 public class PortalProductController {
 

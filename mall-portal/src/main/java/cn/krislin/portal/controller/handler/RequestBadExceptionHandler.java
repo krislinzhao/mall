@@ -9,20 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)     
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/1/5 16:56
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 全局异常处理，避免异常敏感信息直接暴露给客户端
+ * 全局异常处理，避免异常敏感信息直接暴露给客户端
  **/
 @ControllerAdvice
 public class RequestBadExceptionHandler {

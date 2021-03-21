@@ -12,13 +12,9 @@ import java.util.List;
 
 
 /**
-* @vlog: 高于生活，源于生活
-* @desc: 类的描述:远程调用订单中心购物车详细客户端
-* @author: smlz
-* @createDate: 2020/1/14 22:17
-* @version: 1.0
+* 远程调用订单中心购物车详细客户端
 */
-@FeignClient(name = "tulingmall-order",configuration = FeignConfig.class)
+@FeignClient(name = "mall-order",configuration = FeignConfig.class)
 public interface OmsCartItemClientApi {
 
     @RequestMapping(value = "/cart/list/promotion", method = RequestMethod.GET)

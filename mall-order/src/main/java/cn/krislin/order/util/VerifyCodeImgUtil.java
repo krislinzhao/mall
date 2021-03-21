@@ -7,11 +7,7 @@ import java.awt.image.BufferedImage;
 import java.util.Random;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/21
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * 验证码图片生成
  **/
 public class VerifyCodeImgUtil {
     /**
@@ -64,9 +60,7 @@ public class VerifyCodeImgUtil {
     }
 
     private static char[] ops = new char[] {'+', '-', '*'};
-    /**
-     * + - *
-     * */
+
     private static String generateVerifyCode(Random rdm) {
         int num1 = rdm.nextInt(10);
         int num2 = rdm.nextInt(10);

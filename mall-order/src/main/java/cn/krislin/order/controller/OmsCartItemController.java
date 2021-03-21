@@ -15,7 +15,6 @@ import java.util.List;
 
 /**
  * 购物车管理Controller
- * Created by macro on 2018/8/2.
  */
 @Controller
 @Api(tags = "OmsCartItemController", description = "购物车管理")
@@ -25,7 +24,7 @@ public class OmsCartItemController {
     private OmsCartItemService cartItemService;
 
 
-    @ApiOperation(value = "添加商品到购物车",notes = "杨过修改购物逻辑,数据不必全都从前台传")
+    @ApiOperation(value = "添加商品到购物车",notes = "修改购物逻辑,数据不必全都从前台传")
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult add(@RequestBody OmsCartItem cartItem,

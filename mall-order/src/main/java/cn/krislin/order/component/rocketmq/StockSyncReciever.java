@@ -9,22 +9,6 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/3/9 14:21
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
- **/
 @Slf4j
 @Component
 @RocketMQMessageListener(topic = "stock-sync",consumerGroup = "stock-sync-worker")

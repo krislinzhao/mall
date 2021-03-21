@@ -8,7 +8,6 @@ import cn.krislin.mbg.model.PmsSkuStock;
 import java.util.List;
 
 /**
- * Created by tuling on 2018/8/27.
  * 商品的促销信息，包括sku、打折优惠、满减优惠
  */
 public class PromotionProduct extends PmsProduct {

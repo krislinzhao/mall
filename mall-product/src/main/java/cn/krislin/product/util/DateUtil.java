@@ -5,7 +5,6 @@ import java.util.Date;
 
 /**
  * 日期工具类
- * Created by macro on 2019/1/29.
  */
 public class DateUtil {
 
@@ -32,8 +31,4 @@ public class DateUtil {
         calendar.set(Calendar.DAY_OF_MONTH, 1);
         return calendar.getTime();
     }
-
-    /*public static void main(String[] args) {
-        System.out.println(""+getTime(new Date()).getTime());
-    }*/
 }

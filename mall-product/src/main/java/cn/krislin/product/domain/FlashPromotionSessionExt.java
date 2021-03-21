@@ -5,11 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/1/8
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * 秒杀活动信息扩展
  **/
 @Data
 public class FlashPromotionSessionExt extends SmsFlashPromotionSession {

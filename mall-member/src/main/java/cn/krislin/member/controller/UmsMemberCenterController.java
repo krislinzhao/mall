@@ -36,7 +36,7 @@ public class UmsMemberCenterController {
         return CommonResult.success(null);
     }
 
-    @ApiOperation(value = "获取会员信息#杨过添加",notes = "不包含会员等级信息,会员需要被拆分成微服务")
+    @ApiOperation(value = "获取会员信息",notes = "不包含会员等级信息,会员需要被拆分成微服务")
     @GetMapping("/loadUmsMember")
         public CommonResult<UmsMember> loadUserByUsername(String username){
         UmsMember umsMember = umsMemberService.getByUsername(username);
@@ -46,13 +46,13 @@ public class UmsMemberCenterController {
         return CommonResult.success(umsMember);
     }
 
-    @ApiOperation(value = "获取会员详细信息包含会员等级信息#杨过添加",notes = "会员需要被拆分成微服务")
+    @ApiOperation(value = "获取会员详细信息包含会员等级信息",notes = "会员需要被拆分成微服务")
     @GetMapping("/getMemberInfo")
     public CommonResult<PortalMemberInfo> getMemberInfo(@RequestHeader("memberId") long memberId){
         return CommonResult.success(umsMemberCenterService.getMemberInfo(memberId));
     }
 
-    @ApiOperation(value = "修改个人信息#杨过添加",notes = "会员需要被拆分成微服务")
+    @ApiOperation(value = "修改个人信息",notes = "会员需要被拆分成微服务")
     @RequestMapping(value = "updateUmsMember",method = RequestMethod.POST)
     public CommonResult<String> updateUmsMember(@RequestBody UmsMember umsMember,@RequestHeader("memberId") long memberId){
         if(StringUtils.isNotEmpty(umsMember.getPassword())){

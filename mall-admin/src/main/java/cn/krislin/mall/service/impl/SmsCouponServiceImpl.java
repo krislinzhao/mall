@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * 优惠券管理Service实现类
- * Created on 2018/8/28.
  */
 @Service
 public class SmsCouponServiceImpl implements SmsCouponService {

@@ -15,11 +15,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/19
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * zk分布式锁实现
  **/
 @Slf4j
 public class ZKLockImpl implements ZKLock,InitializingBean {
@@ -92,8 +88,7 @@ public class ZKLockImpl implements ZKLock,InitializingBean {
 
     /**
      * 监听节点事件
-     * @param lockPath
-     *       加锁的路径
+     * @param lockPath 加锁的路径
      */
     private void addWatcher(String lockPath) throws Exception {
         String keyPath;

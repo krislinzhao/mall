@@ -5,12 +5,7 @@ import cn.krislin.product.util.BloomFilterHelper;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
- *
- * @author ：杨过
- * @date ：Created in 2020/2/18
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 布隆过滤器service
+ * 布隆过滤器service
  **/
 public class BloomRedisService {
 

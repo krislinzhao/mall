@@ -20,11 +20,11 @@ import java.util.Random;
  * 根据RestTemplate特性自己改造
  */
 @Slf4j
-public class TulingRestTemplate extends RestTemplate {
+public class KrislinRestTemplate extends RestTemplate {
 
     private DiscoveryClient discoveryClient;
 
-    public TulingRestTemplate(DiscoveryClient discoveryClient) {
+    public KrislinRestTemplate(DiscoveryClient discoveryClient) {
         this.discoveryClient = discoveryClient;
     }
 

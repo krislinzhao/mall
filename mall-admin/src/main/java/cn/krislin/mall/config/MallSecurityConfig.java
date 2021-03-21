@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 /**
  * api-security模块相关配置
- * Created on 2019/11/5.
  */
 @Configuration
 @EnableWebSecurity

@@ -30,12 +30,11 @@
             <property name="nullCatalogMeansCurrent" value="true" />
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.tuling.tulingmall.model" targetProject="tulingmall-mbg\src\main\java"/>
+        <javaModelGenerator targetPackage="cn.krislin.mall.model" targetProject="mall-mbg\src\main\java"/>
 
-        <sqlMapGenerator targetPackage="com.tuling.tulingmall.mapper" targetProject="tulingmall-mbg\src\main\resources"/>
+        <sqlMapGenerator targetPackage="cn.krislin.mall.mapper" targetProject="mall-mbg\src\main\resources"/>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.tuling.tulingmall.mapper"
-                             targetProject="tulingmall-mbg\src\main\java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.krislin.mall.mapper" targetProject="mall-mbg\src\main\java"/>
         <!--生成全部表tableName设为%,指定-->
         <table tableName="oms_order_item" enableCountByExample="true" enableUpdateByExample="true"
                enableDeleteByExample="true" enableSelectByExample="true"

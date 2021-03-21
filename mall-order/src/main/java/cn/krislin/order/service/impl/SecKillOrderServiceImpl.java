@@ -29,13 +29,6 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author ：杨过
- * @date ：Created in 2020/2/24
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
- **/
 @Slf4j
 @Service
 public class SecKillOrderServiceImpl implements SecKillOrderService {

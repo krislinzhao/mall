@@ -1,8 +1,8 @@
 package cn.krislin.authcenter.config;
 
-import cn.krislin.authcenter.component.TulingTokenEnhancer;
+import cn.krislin.authcenter.component.KrislinTokenEnhancer;
 import cn.krislin.authcenter.properties.JwtCAProperties;
-import cn.krislin.authcenter.service.TulingUserDetailService;
+import cn.krislin.authcenter.service.KrislinUserDetailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -32,7 +32,7 @@ import java.util.Arrays;
 @Configuration
 @EnableAuthorizationServer
 @EnableConfigurationProperties(value = JwtCAProperties.class)
-public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter {
+public class KrislinAuthServerConfig extends AuthorizationServerConfigurerAdapter {
 
 
     @Autowired
@@ -42,7 +42,7 @@ public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter
     private DataSource dataSource;
 
     @Autowired
-    private TulingUserDetailService tulingUserDetailService;
+    private KrislinUserDetailService krislinUserDetailService;
 
     @Autowired
     private JwtCAProperties jwtCAProperties;
@@ -76,8 +76,8 @@ public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter
 
 
     @Bean
-    public TulingTokenEnhancer tulingTokenEnhancer() {
-        return new TulingTokenEnhancer();
+    public KrislinTokenEnhancer tulingTokenEnhancer() {
+        return new KrislinTokenEnhancer();
     }
 
 
@@ -85,10 +85,6 @@ public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter
     /**
      * 方法实现说明:认证服务器能够给哪些 客户端颁发token  我们需要把客户端的配置 存储到
      * 数据库中 可以基于内存存储和db存储
-     * @author:smlz
-     * @return:
-     * @exception:
-     * @date:2020/1/15 20:18
      */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
@@ -97,10 +93,6 @@ public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter
 
     /**
      * 方法实现说明:用于查找我们第三方客户端的组件 主要用于查找 数据库表 oauth_client_details
-     * @author:smlz
-     * @return:
-     * @exception:
-     * @date:2020/1/15 20:19
      */
     @Bean
     public ClientDetailsService clientDetails() {
@@ -109,10 +101,6 @@ public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter
 
     /**
      * 方法实现说明:授权服务器的配置的配置
-     * @author:smlz
-     * @return:
-     * @exception:
-     * @date:2020/1/15 20:21
      */
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
@@ -122,7 +110,7 @@ public class TulingAuthServerConfig extends AuthorizationServerConfigurerAdapter
 
         endpoints.tokenStore(tokenStore()) //授权服务器颁发的token 怎么存储的
                 .tokenEnhancer(tokenEnhancerChain)
-                .userDetailsService(tulingUserDetailService) //用户来获取token的时候需要 进行账号密码
+                .userDetailsService(krislinUserDetailService) //用户来获取token的时候需要 进行账号密码
                 .authenticationManager(authenticationManager);
     }
 

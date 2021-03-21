@@ -8,7 +8,6 @@ import javax.validation.constraints.Min;
 
 /**
  * 品牌传递参数
- * Created on 2018/4/26.
  */
 public class PmsBrandParam {
     @ApiModelProperty(value = "品牌名称",required = true)

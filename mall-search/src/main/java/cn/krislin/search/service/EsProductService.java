@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * 商品搜索管理Service
- * Created on 2018/6/19.
  */
 public interface EsProductService {
     /**

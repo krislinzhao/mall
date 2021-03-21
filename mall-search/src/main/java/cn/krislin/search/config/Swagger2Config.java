@@ -12,7 +12,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Swagger2API文档的配置
- * Created on 2018/4/26.
  */
 @Configuration
 @EnableSwagger2
@@ -22,7 +21,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.macro.api.search.controller"))
+                .apis(RequestHandlerSelectors.basePackage("cn.krislin.search..controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

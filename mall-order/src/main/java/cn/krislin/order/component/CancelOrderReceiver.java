@@ -15,7 +15,6 @@ import java.io.IOException;
 
 /**
  * 取消订单消息的处理者
- * Created by macro on 2018/9/14.
  */
 @Component
 

@@ -1,11 +1,7 @@
 package cn.krislin.product.component.zklock;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/19
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * zk分布式锁接口
  **/
 public interface ZKLock {
 

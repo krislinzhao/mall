@@ -18,16 +18,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderMessageSender {
 
-    @Value("${rocketmq.tulingmall.scheduleTopic}")
+    @Value("${rocketmq.mall.scheduleTopic}")
     private String scheduleTopic;
 
-    @Value("${rocketmq.tulingmall.transGroup}")
+    @Value("${rocketmq.mall.transGroup}")
     private String transGroup;
 
-    @Value("${rocketmq.tulingmall.transTopic}")
+    @Value("${rocketmq.mall.transTopic}")
     private String transTopic;
 
-    @Value("${rocketmq.tulingmall.asyncOrderTopic}")
+    @Value("${rocketmq.mall.asyncOrderTopic}")
     private String asyncOrderTopic;
 
     private String TAG = "cancelOrder";

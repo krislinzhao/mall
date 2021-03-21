@@ -1,12 +1,5 @@
 package cn.krislincommon.constant;
 
-/**
- * @author ：杨过
- * @date ：Created in 2020/2/17
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
- **/
 public interface RedisKeyPrefixConst {
     /**
      * 产品详情内容缓存前缀

@@ -12,7 +12,6 @@ import java.util.List;
 
 /**
  * 商品管理Service
- * Created on 2018/4/26.
  */
 public interface PmsProductService {
     /**

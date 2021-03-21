@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 会员等级管理Service
- * Created on 2018/4/26.
  */
 public interface UmsMemberLevelService {
     /**

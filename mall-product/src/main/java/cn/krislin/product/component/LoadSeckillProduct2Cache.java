@@ -14,11 +14,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/18
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 将秒杀活动信息load到redis，暂时不用#{yangguo}
+ * 将秒杀活动信息load到redis，暂时不用
  **/
 public class LoadSeckillProduct2Cache implements InitializingBean {
 

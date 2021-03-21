@@ -17,11 +17,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.List;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/19
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * 布隆过滤器配置
  **/
 @Slf4j
 @Configuration

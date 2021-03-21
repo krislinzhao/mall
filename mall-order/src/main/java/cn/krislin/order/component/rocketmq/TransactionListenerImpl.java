@@ -11,7 +11,7 @@ import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Slf4j
-@RocketMQTransactionListener(txProducerGroup = "${rocketmq.tulingmall.transGroup}")
+@RocketMQTransactionListener(txProducerGroup = "${rocketmq.mall.transGroup}")
 public class TransactionListenerImpl implements RocketMQLocalTransactionListener {
     private ConcurrentHashMap<String, Integer> localTrans = new ConcurrentHashMap<String, Integer>();
     private static int maxTryMums = 3;

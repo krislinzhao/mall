@@ -12,20 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import javax.servlet.MultipartConfigElement;
 
 /**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)     
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/1/12 22:12
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 资源访问路径配置
+ * 资源访问路径配置
  **/
 @Configuration
 public class ResourceConfig implements WebMvcConfigurer {

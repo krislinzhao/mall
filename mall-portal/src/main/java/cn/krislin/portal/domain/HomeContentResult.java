@@ -11,7 +11,6 @@ import java.util.List;
 
 /**
  * 首页内容返回信息封装
- * Created by tuling on 2019/1/28.
  */
 @Getter
 @Setter

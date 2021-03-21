@@ -30,8 +30,6 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
-/**
- **/
 @Slf4j
 @Service
 public class PmsProductServiceImpl implements PmsProductService {
@@ -64,7 +62,6 @@ public class PmsProductServiceImpl implements PmsProductService {
     private String lockPath = "/load_db";
 
     /**
-     * add by yangguo
      * 获取商品详情信息
      * @param id 产品ID
      */
@@ -120,7 +117,6 @@ public class PmsProductServiceImpl implements PmsProductService {
     }
 
     /**
-     * add by yangguo
      * 获取秒杀商品列表
      * @param flashPromotionId 秒杀活动ID，关联秒杀活动设置
      * @param sessionId 场次活动ID，for example：13:00-14:00场等
@@ -185,7 +181,6 @@ public class PmsProductServiceImpl implements PmsProductService {
 
     /**
      * 获取首页的秒杀商品列表
-     * @return
      */
     public List<FlashPromotionProduct> getHomeSecKillProductList(){
         PageHelper.startPage(1,8,"sort desc");
@@ -213,7 +208,6 @@ public class PmsProductServiceImpl implements PmsProductService {
 
     /**
      * 查找出所有的产品ID
-     * @return
      */
     public List<Long> getAllProductId(){
         return portalProductDao.getAllProductId();

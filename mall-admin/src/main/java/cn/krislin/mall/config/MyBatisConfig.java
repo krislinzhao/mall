@@ -6,11 +6,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * MyBatis配置类
- * Created on 2019/4/8.
  */
 @Configuration
 @EnableTransactionManagement
-//@MapperScan({"com.macro.api.mapper","com.macro.api.dao"})
-@MapperScan({"com.tuling.tulingmall.mapper","com.tuling.tulingmall.dao"})
+@MapperScan({"cn.krislin.mall.mapper","cn.krislin.mall.dao"})
 public class MyBatisConfig {
 }

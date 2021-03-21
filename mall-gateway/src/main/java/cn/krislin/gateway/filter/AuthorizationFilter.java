@@ -1,6 +1,6 @@
 package cn.krislin.gateway.filter;
 
-import cn.krislin.gateway.Component.TulingRestTemplate;
+import cn.krislin.gateway.Component.KrislinRestTemplate;
 import cn.krislin.gateway.properties.NotAuthUrlProperties;
 import cn.krislin.gateway.utils.JwtUtils;
 import com.alibaba.fastjson.JSON;
@@ -34,7 +34,7 @@ import java.util.Map;
 public class AuthorizationFilter implements GlobalFilter,Ordered,InitializingBean {
 
     @Autowired
-    private TulingRestTemplate restTemplate;
+    private KrislinRestTemplate restTemplate;
 
     /**
      * 请求各个微服务 不需要用户认证的URL

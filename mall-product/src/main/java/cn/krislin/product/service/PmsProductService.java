@@ -4,16 +4,8 @@ import cn.krislin.product.domain.*;
 
 import java.util.List;
 
-/**
- * @author ：杨过
- * @date ：Created in 2019/12/31
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
- **/
 public interface PmsProductService {
     /**
-     * add by yangguo
      * 获取商品详情信息
      * @param id 产品ID
      */

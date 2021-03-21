@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 购物车管理Service
- * Created by macro on 2018/8/2.
  */
 public interface OmsCartItemService {
     /**
@@ -31,7 +30,6 @@ public interface OmsCartItemService {
 
     /**
      * 获取被选择的包含促销活动信息的购物车列表
-     * add by yangguo
      * @param memberId
      * @param itemIds
      * @return

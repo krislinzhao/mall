@@ -23,7 +23,6 @@ import java.util.UUID;
 
 /**
  * Oss相关操作接口
- * Created on 2018/4/26.
  */
 @Slf4j
 @Controller

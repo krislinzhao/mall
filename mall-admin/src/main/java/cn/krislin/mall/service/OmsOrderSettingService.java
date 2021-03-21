@@ -4,7 +4,6 @@ import cn.krislin.mbg.model.OmsOrderSetting;
 
 /**
  * 订单设置Service
- * Created on 2018/10/16.
  */
 public interface OmsOrderSettingService {
     /**

@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 首页广告管理Service
- * Created on 2018/11/7.
  */
 public interface SmsHomeAdvertiseService {
     /**

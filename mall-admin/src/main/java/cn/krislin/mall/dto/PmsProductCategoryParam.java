@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * 添加更新产品分类的参数
- * Created on 2018/4/26.
  */
 public class PmsProductCategoryParam {
     @ApiModelProperty("父分类的编号")

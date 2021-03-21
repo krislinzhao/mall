@@ -2,7 +2,6 @@ package cn.krislin.mall.bo;
 
 /**
  * Controller层的日志封装类
- * Created on 2018/4/26.
  */
 public class WebLog {
     /**

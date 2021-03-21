@@ -7,20 +7,7 @@ import org.apache.shardingsphere.api.sharding.hint.HintShardingValue;
 import java.util.Collection;
 
 /**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/4/27 9:48
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: hint查询，无需再经过sql解析与路由阶段，直接查询目标库表
+ * hint查询，无需再经过sql解析与路由阶段，直接查询目标库表
  **/
 @Slf4j
 public class OrderHintShardingAlgorithm implements HintShardingAlgorithm {

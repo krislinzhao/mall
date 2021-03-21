@@ -7,13 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author ：杨过
- * @date ：Created in 2020/3/19
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
- **/
 @RestController
 public class Transaction2PcController {
     @Autowired

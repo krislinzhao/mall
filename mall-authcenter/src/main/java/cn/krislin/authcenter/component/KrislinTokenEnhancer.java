@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * 类的描述:jwt自定义增强器(根据自己的业务需求添加非敏感字段)
 */
-public class TulingTokenEnhancer implements TokenEnhancer {
+public class KrislinTokenEnhancer implements TokenEnhancer {
     @Override
     public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
 

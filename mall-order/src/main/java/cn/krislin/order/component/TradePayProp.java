@@ -5,20 +5,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- *                  ,;,,;
- *                ,;;'(    社
- *      __      ,;;' ' \   会
- *   /'  '\'~~'~' \ /'\.)  主
- * ,;(      )    /  |.     义
- *,;' \    /-.,,(   ) \    码
- *     ) /       ) / )|    农
- *     ||        ||  \)     
- *     (_\       (_\
- * @author ：杨过
- * @date ：Created in 2020/1/12 21:59
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 支付宝二维码存储与访问路径设置
+ * 支付宝二维码存储与访问路径设置
  **/
 @Component
 @ConfigurationProperties(prefix = "trade.zhifu.qrcode")

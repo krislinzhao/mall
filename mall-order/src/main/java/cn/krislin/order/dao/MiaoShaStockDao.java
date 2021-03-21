@@ -3,11 +3,7 @@ package cn.krislin.order.dao;
 import org.apache.ibatis.annotations.Param;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/25
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description: 秒杀库存服务
+ * 秒杀库存服务
  **/
 public interface MiaoShaStockDao {
 
@@ -16,8 +12,7 @@ public interface MiaoShaStockDao {
 
     /**
      * 秒杀产品乐观锁减库存
-     * @param id
-     *      秒杀活动库存记录ID
+     * @param id 秒杀活动库存记录ID
      * @return
      */
     Integer descStockInVersion(@Param("id") Long id, @Param("oldStock") Integer oldStock, @Param("newStock") Integer newStock);

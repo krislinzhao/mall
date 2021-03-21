@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * 优惠券管理Controller
- * Created by macro on 2018/8/29.
  */
 @Controller
 @Api(tags = "UmsCouponController", description = "用户优惠券管理")

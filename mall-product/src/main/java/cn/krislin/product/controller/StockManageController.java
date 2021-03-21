@@ -9,11 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @author ：杨过
- * @date ：Created in 2020/2/19
- * @version: V1.0
- * @slogan: 天下风云出我辈，一入代码岁月催
- * @description:
+ * 库存管理
  **/
 @RestController
 @RequestMapping("/stock")
@@ -68,11 +64,7 @@ public class StockManageController {
     }
 
     /**
-    * @vlog: 高于生活，源于生活
-    * @desc: 类的描述:锁定库存
-    * @author: smlz
-    * @createDate: 2020/3/16 19:31
-    * @version: 1.0
+    * 锁定库存
     */
     @RequestMapping("/lockStock")
     public CommonResult lockStock(@RequestBody List<CartPromotionItem> cartPromotionItemList) {

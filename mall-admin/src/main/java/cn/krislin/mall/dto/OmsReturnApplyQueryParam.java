@@ -6,7 +6,6 @@ import lombok.Setter;
 
 /**
  * 订单退货申请查询参数
- * Created on 2018/10/18.
  */
 @Getter
 @Setter

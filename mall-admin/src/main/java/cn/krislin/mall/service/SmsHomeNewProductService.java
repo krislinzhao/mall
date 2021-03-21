@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * 首页新品管理Service
- * Created on 2018/11/6.
  */
 public interface SmsHomeNewProductService {
     /**

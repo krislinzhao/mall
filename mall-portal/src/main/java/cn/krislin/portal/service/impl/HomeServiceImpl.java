@@ -16,7 +16,6 @@ import java.util.List;
 
 /**
  * 首页内容管理Service实现类
- * Created by tuling on 2019/1/28.
  */
 @Service
 public class HomeServiceImpl implements HomeService {

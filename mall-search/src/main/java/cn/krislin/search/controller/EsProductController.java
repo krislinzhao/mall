@@ -17,7 +17,6 @@ import java.util.List;
 
 /**
  * 搜索商品管理Controller
- * Created on 2018/6/19.
  */
 @Controller
 @Api(tags = "EsProductController", description = "搜索商品管理")

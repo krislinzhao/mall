@@ -1,6 +1,6 @@
 package cn.krislin.gateway.config;
 
-import cn.krislin.gateway.Component.TulingRestTemplate;
+import cn.krislin.gateway.Component.KrislinRestTemplate;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,7 +14,7 @@ public class RibbonConfig {
      * 需要自己改写RestTemplate
      */
     @Bean
-    public TulingRestTemplate restTemplate(DiscoveryClient discoveryClient) {
-        return new TulingRestTemplate(discoveryClient);
+    public KrislinRestTemplate restTemplate(DiscoveryClient discoveryClient) {
+        return new KrislinRestTemplate(discoveryClient);
     }
 }

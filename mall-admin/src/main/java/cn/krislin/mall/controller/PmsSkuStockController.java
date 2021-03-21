@@ -13,7 +13,6 @@ import java.util.List;
 
 /**
  * sku库存Controller
- * Created on 2018/4/27.
  */
 @Controller
 @Api(tags = "PmsSkuStockController", description = "sku商品库存管理")

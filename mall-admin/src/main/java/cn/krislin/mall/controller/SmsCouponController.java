@@ -15,7 +15,6 @@ import java.util.List;
 
 /**
  * 优惠券管理Controller
- * Created on 2018/8/28.
  */
 @Controller
 @Api(tags = "SmsCouponController", description = "优惠券管理")
